@@ -1,4 +1,4 @@
-const PROXY = 'https://super-pine-05c2.kw2025jp.workers.dev';
+const PROXY = 'https://super-pine-05c2.quotation.workers.dev';
 
 const MCT_ICONS = {
   sword: 'icons/mct/sword.svg', axe: 'icons/mct/axe.svg', mace: 'icons/mct/mace.svg',
