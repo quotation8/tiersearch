@@ -7,9 +7,9 @@ const MCT_ICONS = {
 };
 
 const PVP_ICONS = {
-  sword: 'icons/pvp/sword.png', axe: 'icons/pvp/axe.png', crystal: 'icons/pvp/crystal.png',
-  pot: 'icons/pvp/pot.png', uhc: 'icons/pvp/uhc.png', smp: 'icons/pvp/smp.png', mace: 'icons/pvp/mace.png',
-  neth_pot: 'icons/pvp/neth_pot.png'
+  sword: 'icons/pvp/sword.svg', axe: 'icons/pvp/axe.svg', crystal: 'icons/pvp/crystal.svg',
+  pot: 'icons/pvp/pot.svg', uhc: 'icons/pvp/uhc.svg', smp: 'icons/pvp/smp.svg', mace: 'icons/pvp/mace.svg',
+  neth_pot: 'icons/pvp/neth_pot.svg'
 };
 
 const SUB_ICONS = {
@@ -100,7 +100,7 @@ function buildCard(data, site) {
   const fmtUuid = uuid.replace(/^(.{8})(.{4})(.{4})(.{4})(.{12})$/, '$1-$2-$3-$4-$5');
 
   return `
-    <div class="card">
+    <div class="card ${site}">
       <div class="player-header">
         <img class="avatar"
              src="https://mc-heads.net/avatar/${fmtUuid}/52"
@@ -141,7 +141,7 @@ async function search() {
   const btn = document.getElementById('btn');
   const out = document.getElementById('result');
   btn.disabled = true;
-  out.innerHTML = '<p class="loading">Searching... (初回は少し時間がかかります)</p>';
+  out.innerHTML = '<p class="loading">Searching...</p>';
 
   const [mctData, pvpData, subData] = await Promise.all([
     fetchSafe(`${PROXY}/mct/${encodeURIComponent(name)}`),
