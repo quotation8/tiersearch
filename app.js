@@ -7,9 +7,9 @@ const MCT_ICONS = {
 };
 
 const PVP_ICONS = {
-  sword: 'sword.svg', axe: 'axe.svg', crystal: 'vanilla.svg',
-  pot: 'pot.svg', uhc: 'uhc.svg', smp: 'smp.svg', mace: 'mace.svg',
-  neth_pot: 'nethop.svg'
+  sword: 'icons/pvp/sword.png', axe: 'icons/pvp/axe.png', crystal: 'icons/pvp/crystal.png',
+  pot: 'icons/pvp/pot.png', uhc: 'icons/pvp/uhc.png', smp: 'icons/pvp/smp.png', mace: 'icons/pvp/mace.png',
+  neth_pot: 'icons/pvp/neth_pot.png'
 };
 
 const SUB_ICONS = {
